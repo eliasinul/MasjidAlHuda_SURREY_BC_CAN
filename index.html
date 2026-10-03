@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#174f3b">
-  <meta name="description" content="Masjid Al-Huda in Surrey, British Columbia. View the prayer timetable from Awqat.">
+  <meta name="description" content="Masjid Al-Huda in Surrey, British Columbia. View the weekly Salah and Jumuah timetable, with a link to Awqat for the latest times.">
   <title>Prayer time | Masjid Al-Huda · Surrey, BC</title>
   <link rel="icon" type="image/png" href="assets/al-huda-logo.png">
   <style>
@@ -19,10 +19,15 @@
     main{max-width:1120px;margin:auto;padding:0 32px 56px}.intro{text-align:center;padding:52px 0 36px;position:relative}.intro::before{content:"";display:block;width:46px;height:2px;margin:0 auto 22px;background:var(--gold)}
     .eyebrow{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin:0 0 12px}h1{font:normal clamp(38px,6vw,60px)/1.15 Georgia,serif;margin:0 0 16px;letter-spacing:-1px}.intro p:last-child{font-size:15px;color:var(--muted);margin:0}
     .timetable{background:white;border:1px solid #dfe5df;border-radius:16px;overflow:hidden;box-shadow:0 12px 36px #174f3b06;scroll-margin-top:24px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:23px 28px;border-bottom:1px solid #e7ece7}.section-heading h2{font:normal 25px/1.25 Georgia,serif;margin:0 0 5px}.section-heading p{font-size:12px;color:var(--muted);margin:0}.external{font-size:12px;text-decoration:none;white-space:nowrap;padding:9px 14px;border:1px solid #d7e1d8;border-radius:7px}.external:hover{background:#f0f5ef}
-    iframe{display:block;width:100%;height:880px;border:0;background:#fff}.help{padding:16px 28px;margin:0;background:#f6f8f4;border-top:1px solid #e7ece7;font-size:12px;color:var(--muted)}
+    .help{padding:16px 28px;margin:0;background:#f6f8f4;border-top:1px solid #e7ece7;font-size:12px;color:var(--muted)}
     footer{max-width:1120px;margin:auto;padding:0 32px 30px;display:flex;justify-content:space-between;gap:16px;font-size:11px;color:var(--muted)}footer span:first-child{color:var(--green)}
-    @media(max-width:600px){.bar{padding:16px 20px;gap:14px}.brand{gap:10px}.brand img{width:65px;height:52px}.brand strong{font-size:20px}.brand small{font-size:8px;letter-spacing:1px}nav a{font-size:11px}main{padding:0 14px 30px}.intro{padding:36px 8px 28px}.intro p:last-child{font-size:13px}.section-heading{padding:20px;align-items:flex-start;flex-direction:column;gap:12px}.section-heading h2{font-size:23px}iframe{height:1050px}.help{padding:15px 20px}footer{padding:0 20px 24px;flex-direction:column;gap:4px}}
+    @media(max-width:600px){.bar{padding:16px 20px;gap:14px}.brand{gap:10px}.brand img{width:65px;height:52px}.brand strong{font-size:20px}.brand small{font-size:8px;letter-spacing:1px}nav a{font-size:11px}main{padding:0 14px 30px}.intro{padding:36px 8px 28px}.intro p:last-child{font-size:13px}.section-heading{padding:20px;align-items:flex-start;flex-direction:column;gap:12px}.section-heading h2{font-size:23px}.help{padding:15px 20px}footer{padding:0 20px 24px;flex-direction:column;gap:4px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.external{background:white;color:var(--green);min-height:44px;white-space:normal}
+    .schedule-body{padding:24px 28px 30px}.date-range{font-size:14px;color:var(--green);margin:0 0 8px}.status{margin:0 0 24px;font-size:13px;color:var(--muted)}.status.expired{background:#fff4dd;color:#735315;padding:12px 16px;border-radius:8px}
+    .tables{display:grid;grid-template-columns:1fr 1fr;gap:32px}.tables h3,.jumuah h3{font:normal 22px Georgia,serif;margin:0 0 14px}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}caption{text-align:left;font:normal 22px Georgia,serif;margin-bottom:14px}th,td{text-align:left;padding:11px 8px;border-bottom:1px solid #e8eee8}thead th{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}tbody th{font-weight:500}td{white-space:nowrap}.jumuah{margin-top:28px}.jumuah h3{font:normal 23px Georgia,serif;margin:0 0 14px}.sessions{display:grid;grid-template-columns:1fr 1fr;gap:16px}.session{background:#f6f8f4;border:1px solid #e5ebe1;border-radius:10px;padding:18px 20px}.session h4{margin:0 0 10px;font-size:14px;color:var(--green)}.session p{margin:5px 0;font-size:14px}.session strong{font-weight:600}.time-note{font-size:12px;color:var(--muted);margin:20px 0 0}
+    dialog{width:calc(100% - 32px);max-width:440px;padding:28px;border:1px solid #dfe5df;border-radius:16px;color:var(--ink);box-shadow:0 20px 80px #0003}dialog::backdrop{background:#102d22a8}dialog h2{font:normal 28px Georgia,serif;margin:0 0 12px}dialog p{font-size:14px;color:var(--muted);margin:0 0 24px}.dialog-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.primary{display:inline-block;background:var(--green);color:white;text-decoration:none;border:0;border-radius:7px;padding:11px 16px;font-size:14px}.close{background:white;border:1px solid #d7e1d8;border-radius:7px;padding:10px 16px;font-size:14px;color:var(--green);min-height:44px}
+    @media(max-width:700px){.tables,.sessions{grid-template-columns:1fr}.tables{gap:26px}.schedule-body{padding:22px 20px}th,td{padding:10px 6px}.section-heading{flex-wrap:wrap}}
   </style>
 </head>
 <body>
@@ -33,12 +38,68 @@
   </div></header>
   <main>
     <section class="intro" aria-labelledby="welcome"><p class="eyebrow">Al-Huda Islamic Society</p><h1 id="welcome">Welcome to Masjid Al-Huda</h1><p>Learn, practice &amp; propagate.</p></section>
-    <section class="timetable" id="prayer-time" aria-labelledby="prayer-heading">
-      <div class="section-heading"><div><h2 id="prayer-heading">Prayer time</h2><p>Masjid Al-Huda prayer timetable · Powered by Awqat</p></div><a class="external" href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">Open on Awqat <span aria-hidden="true">↗</span><span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"> (opens in a new tab)</span></a></div>
-      <iframe src="https://www.awqat.net/masjid/masjid-al-huda" title="Masjid Al-Huda prayer timetable from Awqat" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p class="help">Timetable not showing? <a href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">View prayer times directly on Awqat (new tab)</a>.</p>
+    <section class="timetable" id="prayer-time" aria-labelledby="prayer-heading" data-valid-from="2026-10-02" data-valid-to="2026-10-08">
+      <div class="section-heading"><div><h2 id="prayer-heading">Prayer time</h2><p>Weekly Salah timetable · Masjid Al-Huda</p></div><button class="external" id="check-times" type="button" aria-haspopup="dialog" aria-controls="awqat-dialog">Check latest times on Awqat <span aria-hidden="true">↗</span></button></div>
+      <div class="schedule-body">
+        <p class="date-range"><strong>Friday, October 2 – Thursday, October 8, 2026</strong></p>
+        <p class="status" id="schedule-status" aria-live="polite">This timetable applies to the dates above. If prayer times seem out of date, check Awqat.</p>
+        <div class="tables">
+          <table><caption>Daily prayers</caption><thead><tr><th scope="col">Salah</th><th scope="col">Adhaan</th><th scope="col">Iqama</th></tr></thead><tbody>
+            <tr><th scope="row">Fajr</th><td>6:20 AM</td><td>6:30 AM</td></tr>
+            <tr><th scope="row">Dhuhr</th><td>1:30 PM</td><td>1:40 PM</td></tr>
+            <tr><th scope="row">Asr</th><td>5:40 PM</td><td>5:50 PM</td></tr>
+            <tr><th scope="row">Isha</th><td>8:20 PM</td><td>8:30 PM</td></tr>
+          </tbody></table>
+          <table><caption>Maghrib · day by day</caption><thead><tr><th scope="col">Day</th><th scope="col">Adhaan</th><th scope="col">Iqama</th></tr></thead><tbody>
+            <tr><th scope="row">Fri · Oct 2</th><td>6:51 PM</td><td>6:56 PM</td></tr>
+            <tr><th scope="row">Sat · Oct 3</th><td>6:48 PM</td><td>6:53 PM</td></tr>
+            <tr><th scope="row">Sun · Oct 4</th><td>6:46 PM</td><td>6:51 PM</td></tr>
+            <tr><th scope="row">Mon · Oct 5</th><td>6:44 PM</td><td>6:49 PM</td></tr>
+            <tr><th scope="row">Tue · Oct 6</th><td>6:42 PM</td><td>6:47 PM</td></tr>
+            <tr><th scope="row">Wed · Oct 7</th><td>6:40 PM</td><td>6:45 PM</td></tr>
+            <tr><th scope="row">Thu · Oct 8</th><td>6:38 PM</td><td>6:43 PM</td></tr>
+          </tbody></table>
+        </div>
+        <section class="jumuah" aria-labelledby="jumuah-heading"><h3 id="jumuah-heading">Friday prayer · Jumuah</h3><div class="sessions">
+          <div class="session"><h4>First Jumuah</h4><p>English lecture <strong>1:10 PM</strong></p><p>Adhaan <strong>1:40 PM</strong></p></div>
+          <div class="session"><h4>Second Jumuah</h4><p>English program <strong>2:15 PM</strong></p><p>Adhaan <strong>2:30 PM</strong></p></div>
+        </div></section>
+        <p class="time-note">All times are local to Surrey, British Columbia.</p>
+      </div>
+      <p class="help">Prayer times seem out of date? <a href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">Check the latest timetable on Awqat (new tab)</a>.</p>
     </section>
   </main>
   <footer><span>Masjid Al-Huda · Al-Huda Islamic Society</span><span>Surrey, British Columbia, Canada</span></footer>
+  <dialog id="awqat-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <h2 id="dialog-title">Check the latest prayer times</h2>
+    <p id="dialog-description">If the dates or prayer times shown here seem out of date, please check Masjid Al-Huda’s timetable on Awqat. It will open in a new tab.</p>
+    <div class="dialog-actions"><a class="primary" href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">Open Awqat ↗</a><button class="close" id="close-dialog" type="button" autofocus>Close</button></div>
+  </dialog>
+  <script>
+    const dialog = document.getElementById('awqat-dialog');
+    const checkButton = document.getElementById('check-times');
+    checkButton.addEventListener('click', () => dialog.showModal());
+    document.getElementById('close-dialog').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('close', () => checkButton.focus());
+    dialog.addEventListener('click', (event) => {
+      const bounds = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
+    });
+    function updateScheduleStatus() {
+      const parts = new Intl.DateTimeFormat('en-CA', {timeZone: 'America/Vancouver', year: 'numeric', month: '2-digit', day: '2-digit'}).formatToParts(new Date());
+      const datePart = (type) => parts.find(part => part.type === type).value;
+      const today = `${datePart('year')}-${datePart('month')}-${datePart('day')}`;
+      const schedule = document.getElementById('prayer-time');
+      const status = document.getElementById('schedule-status');
+      const outsideDates = today < schedule.dataset.validFrom || today > schedule.dataset.validTo;
+      status.classList.toggle('expired', outsideDates);
+      status.textContent = outsideDates
+        ? 'This timetable does not cover today. Please check Awqat for the latest prayer times.'
+        : 'This timetable covers today. If prayer times seem out of date, please check Awqat.';
+    }
+    updateScheduleStatus();
+    setInterval(updateScheduleStatus, 60000);
+  </script>
 </body>
 </html>
+

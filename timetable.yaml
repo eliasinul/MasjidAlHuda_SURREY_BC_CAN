@@ -1,0 +1,45 @@
+# Replace timetable_text with the latest mosque timetable.
+# Keep every line inside the text block indented by two spaces.
+# Ask Codex to interpret this file and update the website after editing.
+# This file is an editable source; index.html does not read it automatically yet.
+
+masjid: "Masjid Al-Huda"
+location: "Surrey, British Columbia, Canada"
+timezone: "America/Vancouver"
+year: 2026
+
+# Interpretation: Fajr is AM; Dhuhr, Asr, Maghrib, Isha and Jumuah are PM.
+# Jumuah adhaan times are supplied; no separate Jumuah iqama time is supplied.
+# Use the dates inside timetable_text as the timetable validity period.
+# Do not present this schedule as current outside that period.
+
+timetable_text: |
+  Timetable for Salah
+
+  From: Fri Oct 2
+  To: Thur Oct 8
+
+             Adhaan  Iqama
+  FAJR       6:20    6:30
+  DHUHR      1:30    1:40
+  ASR        5:40    5:50
+  ISHA       8:20    8:30
+
+  Maghrib    Adhaan  Iqama
+  Fri        6:51    6:56
+  Sat        6:48    6:53
+  Sun        6:46    6:51
+  Mon        6:44    6:49
+  Tues       6:42    6:47
+  Wed        6:40    6:45
+  Thur       6:38    6:43
+
+  Friday prayer (Jumuah)
+
+  1st:
+  English Lecture @ 1:10
+  Adhaan @ 1:40
+
+  2nd:
+  English Program @ 2:15
+  Adhaan @ 2:30

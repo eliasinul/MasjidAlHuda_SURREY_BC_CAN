@@ -1,13 +1,13 @@
 # Masjid Al-Huda website
 
-A static homepage featuring the Al-Huda Islamic Society logo and the Awqat prayer timetable.
+Static homepage with the Al-Huda logo, weekly Salah and Jumuah timetable, and an Awqat popup link.
 
-## Publish with GitHub Pages
+## Update the timetable
 
-1. Commit and push `index.html` and the `assets` folder to your GitHub repository.
-2. In the repository, open **Settings > Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the branch containing these files and **/(root)**, then save.
-5. Open the website link shown by GitHub after deployment completes.
+Edit `timetable.yaml`, retaining the two-space indentation inside `timetable_text`. Then ask Codex to update `index.html` from that file. The website does not automatically load YAML. Its date warning uses America/Vancouver and the schedule dates in the HTML.
 
-The iframe displays https://www.awqat.net/masjid/masjid-al-huda. Its contents and permission to embed are controlled by Awqat. A direct link is always available below the timetable.
+## Publish
+
+Push `index.html` and `assets` to GitHub. Under Settings > Pages, choose Deploy from a branch, select your branch and /(root), then save.
+
+Awqat opens in a new tab because its website blocks iframe embedding. The displayed timetable is the supplied mosque schedule and is not synced with Awqat.

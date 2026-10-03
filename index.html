@@ -28,6 +28,18 @@
     .tables{display:grid;grid-template-columns:1fr 1fr;gap:32px}.tables h3,.jumuah h3{font:normal 22px Georgia,serif;margin:0 0 14px}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}caption{text-align:left;font:normal 22px Georgia,serif;margin-bottom:14px}th,td{text-align:left;padding:11px 8px;border-bottom:1px solid #e8eee8}thead th{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}tbody th{font-weight:500}td{white-space:nowrap}.jumuah{margin-top:28px}.jumuah h3{font:normal 23px Georgia,serif;margin:0 0 14px}.sessions{display:grid;grid-template-columns:1fr 1fr;gap:16px}.session{background:#f6f8f4;border:1px solid #e5ebe1;border-radius:10px;padding:18px 20px}.session h4{margin:0 0 10px;font-size:14px;color:var(--green)}.session p{margin:5px 0;font-size:14px}.session strong{font-weight:600}.time-note{font-size:12px;color:var(--muted);margin:20px 0 0}
     dialog{width:calc(100% - 32px);max-width:440px;padding:28px;border:1px solid #dfe5df;border-radius:16px;color:var(--ink);box-shadow:0 20px 80px #0003}dialog::backdrop{background:#102d22a8}dialog h2{font:normal 28px Georgia,serif;margin:0 0 12px}dialog p{font-size:14px;color:var(--muted);margin:0 0 24px}.dialog-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.primary{display:inline-block;background:var(--green);color:white;text-decoration:none;border:0;border-radius:7px;padding:11px 16px;font-size:14px}.close{background:white;border:1px solid #d7e1d8;border-radius:7px;padding:10px 16px;font-size:14px;color:var(--green);min-height:44px}
     @media(max-width:700px){.tables,.sessions{grid-template-columns:1fr}.tables{gap:26px}.schedule-body{padding:22px 20px}th,td{padding:10px 6px}.section-heading{flex-wrap:wrap}}
+
+    body{background:#f5f3ec}body::before{opacity:.065}header{background:#f9f8f2}.brand img{width:110px;height:80px}
+    .intro{margin:28px 0 24px;min-height:340px;border-radius:22px;overflow:hidden;padding:65px 32px;background:radial-gradient(ellipse at 50% 120%,#25674e,#123e30 70%);color:#fff9e8;isolation:isolate}.intro::before{background:#cfb372;position:relative;z-index:1}.intro h1{max-width:660px;margin:0 auto 16px;font-size:clamp(35px,5vw,56px)}.intro .eyebrow{color:#e0ca97}.intro .tagline{color:#e0e9dd;font-size:15px}.hero-copy{position:relative;z-index:2}.hero-art{position:absolute;width:390px;height:390px;right:-135px;top:-25px;color:#d3b56d;opacity:.45;pointer-events:none;animation:turn 120s linear infinite}.hero-art.left{left:-150px;right:auto;top:100px;width:320px;height:320px;opacity:.22;animation-direction:reverse}.arch{position:absolute;width:440px;height:480px;border:1px solid #dcc48730;border-radius:50% 50% 0 0;left:50%;top:20px;transform:translateX(-50%);pointer-events:none}.arch::before{content:'';position:absolute;inset:15px;border:1px solid #dcc48720;border-radius:inherit}.hero-link{display:inline-block;margin-top:24px;color:#fff4d6;border:1px solid #c6ac6b7a;padding:10px 22px;text-decoration:none;border-radius:24px;font-size:13px;transition:background .2s,transform .2s}.hero-link:hover{background:#ffffff12;transform:translateY(-2px)}
+    .live-strip{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:22px 28px;background:#fffcf5;border:1px solid #e3ddcb;border-radius:14px;margin-bottom:26px;box-shadow:0 8px 26px #174f3b05}.live-label{font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#63756b;display:flex;gap:8px;align-items:center;margin-bottom:6px}.live-dot{width:6px;height:6px;border-radius:50%;background:#3d7959;box-shadow:0 0 0 4px #3d795913}.clock{font:normal 29px Georgia,serif;letter-spacing:.3px;font-variant-numeric:tabular-nums}.live-date{font-size:12px;color:var(--muted);margin-top:4px}.next-event{border-left:1px solid #e3ddcb;padding-left:26px}.next-name{font:normal 24px Georgia,serif}.next-detail{font-size:12px;color:var(--muted);margin-top:6px}
+    .timetable{box-shadow:0 14px 50px #123e3009}.section-heading{background:linear-gradient(110deg,#eff4ed,#fffef9)}.section-heading h2{font-size:29px}.external{transition:background .2s,box-shadow .2s}.external:hover{box-shadow:0 4px 12px #174f3b10}.session{position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}.session::after{content:'✧';position:absolute;right:15px;top:4px;color:#ae873925;font-size:90px;line-height:1;pointer-events:none}.session:hover{transform:translateY(-3px);box-shadow:0 8px 18px #174f3b0a}tbody tr{transition:background .2s}tbody tr:hover{background:#f6f8f3}tr.today{background:#edf4e8}tr.today th{color:#174f3b;font-weight:700}.today-tag{font:normal 9px Arial,sans-serif;text-transform:uppercase;letter-spacing:1px;display:inline-block;margin-left:6px;color:#174f3b}.ornament{display:flex;align-items:center;gap:12px;justify-content:center;color:#aa8744;font-size:22px;margin:26px 0 0}.ornament::before,.ornament::after{content:'';width:70px;height:1px;background:#b18a3d40}
+    @keyframes turn{to{transform:rotate(360deg)}}@keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}.hero-copy,.live-strip{animation:enter .8s ease both}.live-strip{animation-delay:.12s}
+    @media(max-width:700px){.intro{margin-top:18px;padding:46px 20px;min-height:310px}.hero-art{right:-230px;opacity:.28}.hero-art.left{left:-230px}.arch{width:300px}.live-strip{padding:20px;gap:18px}.clock{font-size:24px}.next-name{font-size:20px}.next-event{padding-left:18px}.brand img{width:75px;height:58px}}
+    @media(max-width:420px){.live-strip{grid-template-columns:1fr}.next-event{border-left:0;border-top:1px solid #e3ddcb;padding:16px 0 0}.brand strong{font-size:18px}.brand small{max-width:180px;font-size:7px}.intro h1{font-size:36px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+    .maghrib-panel{min-width:0}.maghrib-panel h3{font:normal 22px Georgia,serif;margin:0 0 6px}.maghrib-date{font-size:12px;color:var(--muted);margin:0 0 18px}.maghrib-times{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#f0f5ec;border:1px solid #e0e8dc;border-radius:12px;padding:22px 20px}.maghrib-times span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:8px}.maghrib-times strong{font:normal 28px Georgia,serif;color:var(--green)}.week-toggle{margin:16px 0 8px;background:white;border:1px solid #d7e1d8;padding:10px 14px;border-radius:7px;color:var(--green);font-size:12px;min-height:44px}.week-toggle:hover{background:#f6f8f3}.maghrib-unavailable{font-size:13px;color:#735315;margin:12px 0 0}[hidden]{display:none!important}
   </style>
 </head>
 <body>
@@ -37,7 +49,8 @@
     <nav aria-label="Main navigation"><a href="#prayer-time">Prayer time</a></nav>
   </div></header>
   <main>
-    <section class="intro" aria-labelledby="welcome"><p class="eyebrow">Al-Huda Islamic Society</p><h1 id="welcome">Welcome to Masjid Al-Huda</h1><p>Learn, practice &amp; propagate.</p></section>
+    <section class="intro" aria-labelledby="welcome"><svg class="hero-art" viewBox="0 0 400 400" aria-hidden="true" fill="none"><defs><g id="petal"><path d="M200 200 Q148 127 200 22 Q252 127 200 200Z"/><path d="M200 200 165 80 200 22 235 80Z"/></g></defs><g stroke="currentColor" stroke-width="1"><circle cx="200" cy="200" r="183"/><circle cx="200" cy="200" r="160"/><use href="#petal" transform="rotate(0 200 200)"/><use href="#petal" transform="rotate(30 200 200)"/><use href="#petal" transform="rotate(60 200 200)"/><use href="#petal" transform="rotate(90 200 200)"/><use href="#petal" transform="rotate(120 200 200)"/><use href="#petal" transform="rotate(150 200 200)"/><use href="#petal" transform="rotate(180 200 200)"/><use href="#petal" transform="rotate(210 200 200)"/><use href="#petal" transform="rotate(240 200 200)"/><use href="#petal" transform="rotate(270 200 200)"/><use href="#petal" transform="rotate(300 200 200)"/><use href="#petal" transform="rotate(330 200 200)"/><path d="M200 118 224 142 258 142 258 176 282 200 258 224 258 258 224 258 200 282 176 258 142 258 142 224 118 200 142 176 142 142 176 142Z"/><circle cx="200" cy="200" r="48"/></g></svg><svg class="hero-art left" viewBox="0 0 400 400" aria-hidden="true" fill="none"><defs><g id="petal-left"><path d="M200 200 Q148 127 200 22 Q252 127 200 200Z"/><path d="M200 200 165 80 200 22 235 80Z"/></g></defs><g stroke="currentColor" stroke-width="1"><circle cx="200" cy="200" r="183"/><circle cx="200" cy="200" r="160"/><use href="#petal-left" transform="rotate(0 200 200)"/><use href="#petal-left" transform="rotate(30 200 200)"/><use href="#petal-left" transform="rotate(60 200 200)"/><use href="#petal-left" transform="rotate(90 200 200)"/><use href="#petal-left" transform="rotate(120 200 200)"/><use href="#petal-left" transform="rotate(150 200 200)"/><use href="#petal-left" transform="rotate(180 200 200)"/><use href="#petal-left" transform="rotate(210 200 200)"/><use href="#petal-left" transform="rotate(240 200 200)"/><use href="#petal-left" transform="rotate(270 200 200)"/><use href="#petal-left" transform="rotate(300 200 200)"/><use href="#petal-left" transform="rotate(330 200 200)"/><path d="M200 118 224 142 258 142 258 176 282 200 258 224 258 258 224 258 200 282 176 258 142 258 142 224 118 200 142 176 142 142 176 142Z"/><circle cx="200" cy="200" r="48"/></g></svg><div class="arch" aria-hidden="true"></div><div class="hero-copy"><p class="eyebrow">Al-Huda Islamic Society</p><h1 id="welcome">Welcome to<br>Masjid Al-Huda</h1><p class="tagline">Learn, practice &amp; propagate.</p><a class="hero-link" href="#prayer-time">View prayer timetable ↓</a></div></section>
+    <section class="live-strip" aria-label="Surrey local time and upcoming prayer"><div><div class="live-label"><span class="live-dot" aria-hidden="true"></span>Surrey local time</div><div class="clock" id="live-clock">—</div><div class="live-date" id="live-date">America/Vancouver</div></div><div class="next-event"><div class="live-label">Next scheduled adhaan</div><div class="next-name" id="next-name">See timetable below</div><div class="next-detail" id="next-detail">Based on the displayed weekly schedule</div></div></section>
     <section class="timetable" id="prayer-time" aria-labelledby="prayer-heading" data-valid-from="2026-10-02" data-valid-to="2026-10-08">
       <div class="section-heading"><div><h2 id="prayer-heading">Prayer time</h2><p>Weekly Salah timetable · Masjid Al-Huda</p></div><button class="external" id="check-times" type="button" aria-haspopup="dialog" aria-controls="awqat-dialog">Check latest times on Awqat <span aria-hidden="true">↗</span></button></div>
       <div class="schedule-body">
@@ -50,15 +63,15 @@
             <tr><th scope="row">Asr</th><td>5:40 PM</td><td>5:50 PM</td></tr>
             <tr><th scope="row">Isha</th><td>8:20 PM</td><td>8:30 PM</td></tr>
           </tbody></table>
-          <table><caption>Maghrib · day by day</caption><thead><tr><th scope="col">Day</th><th scope="col">Adhaan</th><th scope="col">Iqama</th></tr></thead><tbody>
-            <tr><th scope="row">Fri · Oct 2</th><td>6:51 PM</td><td>6:56 PM</td></tr>
-            <tr><th scope="row">Sat · Oct 3</th><td>6:48 PM</td><td>6:53 PM</td></tr>
-            <tr><th scope="row">Sun · Oct 4</th><td>6:46 PM</td><td>6:51 PM</td></tr>
-            <tr><th scope="row">Mon · Oct 5</th><td>6:44 PM</td><td>6:49 PM</td></tr>
-            <tr><th scope="row">Tue · Oct 6</th><td>6:42 PM</td><td>6:47 PM</td></tr>
-            <tr><th scope="row">Wed · Oct 7</th><td>6:40 PM</td><td>6:45 PM</td></tr>
-            <tr><th scope="row">Thu · Oct 8</th><td>6:38 PM</td><td>6:43 PM</td></tr>
-          </tbody></table>
+          <section class="maghrib-panel" aria-labelledby="maghrib-title"><h3 id="maghrib-title">Maghrib · today</h3><p class="maghrib-date" id="maghrib-date">Surrey local date</p><div class="maghrib-times"><div><span>Adhaan</span><strong id="maghrib-adhaan">—</strong></div><div><span>Iqama</span><strong id="maghrib-iqama">—</strong></div></div><p class="maghrib-unavailable" id="maghrib-unavailable" hidden>No timetable is available for today. <a href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">Check Awqat (new tab)</a>.</p><button class="week-toggle" id="week-toggle" type="button" aria-expanded="false" aria-controls="maghrib-week">Show all Maghrib days ↓</button><div id="maghrib-week" hidden><table><caption>Maghrib · full week</caption><thead><tr><th scope="col">Day</th><th scope="col">Adhaan</th><th scope="col">Iqama</th></tr></thead><tbody>
+            <tr data-date="2026-10-02"><th scope="row">Fri · Oct 2</th><td>6:51 PM</td><td>6:56 PM</td></tr>
+            <tr data-date="2026-10-03"><th scope="row">Sat · Oct 3</th><td>6:48 PM</td><td>6:53 PM</td></tr>
+            <tr data-date="2026-10-04"><th scope="row">Sun · Oct 4</th><td>6:46 PM</td><td>6:51 PM</td></tr>
+            <tr data-date="2026-10-05"><th scope="row">Mon · Oct 5</th><td>6:44 PM</td><td>6:49 PM</td></tr>
+            <tr data-date="2026-10-06"><th scope="row">Tue · Oct 6</th><td>6:42 PM</td><td>6:47 PM</td></tr>
+            <tr data-date="2026-10-07"><th scope="row">Wed · Oct 7</th><td>6:40 PM</td><td>6:45 PM</td></tr>
+            <tr data-date="2026-10-08"><th scope="row">Thu · Oct 8</th><td>6:38 PM</td><td>6:43 PM</td></tr>
+          </tbody></table></div></section>
         </div>
         <section class="jumuah" aria-labelledby="jumuah-heading"><h3 id="jumuah-heading">Friday prayer · Jumuah</h3><div class="sessions">
           <div class="session"><h4>First Jumuah</h4><p>English lecture <strong>1:10 PM</strong></p><p>Adhaan <strong>1:40 PM</strong></p></div>
@@ -68,6 +81,7 @@
       </div>
       <p class="help">Prayer times seem out of date? <a href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">Check the latest timetable on Awqat (new tab)</a>.</p>
     </section>
+    <div class="ornament" aria-hidden="true">✧</div>
   </main>
   <footer><span>Masjid Al-Huda · Al-Huda Islamic Society</span><span>Surrey, British Columbia, Canada</span></footer>
   <dialog id="awqat-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
@@ -76,6 +90,13 @@
     <div class="dialog-actions"><a class="primary" href="https://www.awqat.net/masjid/masjid-al-huda" target="_blank" rel="noopener noreferrer">Open Awqat ↗</a><button class="close" id="close-dialog" type="button" autofocus>Close</button></div>
   </dialog>
   <script>
+    const weekToggle=document.getElementById('week-toggle');
+    weekToggle.addEventListener('click',()=>{
+      const open=weekToggle.getAttribute('aria-expanded')!=='true';
+      weekToggle.setAttribute('aria-expanded',String(open));
+      document.getElementById('maghrib-week').hidden=!open;
+      weekToggle.textContent=open?'Hide all Maghrib days ↑':'Show all Maghrib days ↓';
+    });
     const dialog = document.getElementById('awqat-dialog');
     const checkButton = document.getElementById('check-times');
     checkButton.addEventListener('click', () => dialog.showModal());
@@ -97,6 +118,47 @@
         ? 'This timetable does not cover today. Please check Awqat for the latest prayer times.'
         : 'This timetable covers today. If prayer times seem out of date, please check Awqat.';
     }
+
+    function updateLivePanel() {
+      const now = new Date();
+      const zone = 'America/Vancouver';
+      document.getElementById('live-clock').textContent = new Intl.DateTimeFormat('en-CA', {timeZone:zone,hour:'numeric',minute:'2-digit',second:'2-digit',hour12:true}).format(now);
+      document.getElementById('live-date').textContent = new Intl.DateTimeFormat('en-CA', {timeZone:zone,weekday:'long',month:'long',day:'numeric',year:'numeric'}).format(now);
+      const parts = new Intl.DateTimeFormat('en-CA',{timeZone:zone,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).formatToParts(now);
+      const part = type => parts.find(p=>p.type===type).value;
+      const today = part('year')+'-'+part('month')+'-'+part('day');
+      const seconds = Number(part('hour'))*3600+Number(part('minute'))*60+Number(part('second'));
+      const schedule = document.getElementById('prayer-time');
+      document.querySelectorAll('tr[data-date]').forEach(row=>{
+        const active = row.dataset.date===today;
+        row.classList.toggle('today',active);
+        if(active && !row.querySelector('.today-tag')){const badge=document.createElement('span');badge.className='today-tag';badge.textContent='Today';row.querySelector('th').append(badge);}
+        if(!active) row.querySelector('.today-tag')?.remove();
+      });
+      const name=document.getElementById('next-name'), detail=document.getElementById('next-detail');
+      const todayRow=document.querySelector('tr[data-date="'+today+'"]');
+      const covered=today>=schedule.dataset.validFrom && today<=schedule.dataset.validTo;
+      const available=covered && Boolean(todayRow);
+      document.getElementById('maghrib-date').textContent=new Intl.DateTimeFormat('en-CA',{timeZone:zone,weekday:'long',month:'long',day:'numeric',year:'numeric'}).format(now);
+      document.getElementById('maghrib-adhaan').textContent=available?todayRow.querySelectorAll('td')[0].textContent.trim():'—';
+      document.getElementById('maghrib-iqama').textContent=available?todayRow.querySelectorAll('td')[1].textContent.trim():'—';
+      document.getElementById('maghrib-unavailable').hidden=available;
+      if(today<schedule.dataset.validFrom || today>schedule.dataset.validTo){name.textContent='Please check Awqat';detail.textContent='The displayed timetable does not cover today.';return;}
+      const maghribRow=document.querySelector('tr[data-date="'+today+'"]');
+      if(!maghribRow){name.textContent='Please check Awqat';detail.textContent='No Maghrib time is available for today.';return;}
+      const maghrib=maghribRow.querySelector('td').textContent.trim();
+      const friday=new Intl.DateTimeFormat('en-US',{timeZone:zone,weekday:'short'}).format(now)==='Fri';
+      const events=[['Fajr','6:20 AM'],...(friday?[['First Jumuah','1:40 PM'],['Second Jumuah','2:30 PM']]:[['Dhuhr','1:30 PM']]),['Asr','5:40 PM'],['Maghrib',maghrib],['Isha','8:20 PM']];
+      const toSeconds=time=>{const [h,m,period]=time.match(/(\d+):(\d+) (AM|PM)/).slice(1);return ((Number(h)%12)+(period==='PM'?12:0))*3600+Number(m)*60;};
+      const next=events.find(event=>toSeconds(event[1])>seconds);
+      if(!next){name.textContent='Today’s prayers complete';detail.textContent='See the timetable for prayer and iqama times.';return;}
+      const remaining=toSeconds(next[1])-seconds;
+      name.textContent=next[0]+' · '+next[1];
+      detail.textContent='Adhaan in '+Math.floor(remaining/3600)+'h '+Math.floor(remaining%3600/60)+'m · From this week’s timetable';
+    }
+    updateLivePanel();
+    setInterval(updateLivePanel,1000);
+
     updateScheduleStatus();
     setInterval(updateScheduleStatus, 60000);
   </script>
